@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Edit Post</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>Edit Post</title>
+    </head>
 
-<body>
-    <div class="editBody">
-        <h2>Edit your post</h2>
-        <p class="postId">Post Id : <%= post.id %>
-        </p>
-        <p class="postUser">Post Username : @<%= post.username %>
-        </p>
-        <form action="/posts/<%= post.id %>?_method=PATCH" method="post">
-            <textarea name="content" id="content" cols="30" rows="10"><%= post.content %></textarea>
-            <button>Submit</button>
-        </form>
-    </div>
-</body>
+    <body>
+        <div class="editBody">
+            <h2>Edit your post</h2>
+            <p class="postId">Post Id : <%= post.id %>
+            </p>
+            <p class="postUser">Post Username : @<%= post.username %>
+            </p>
+            <form action="/posts/<%= post.id %>?_method=PATCH" method="post">
+                <textarea name="content" id="content" cols="30" rows="10"><%= post.content %></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
 
-</html>
+    </html>
